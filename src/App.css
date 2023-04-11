@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Museo Sans Rounded';
+  src: url(../fonts/museo/MuseoSansRounded-500.woff2);
+  font-weight: normal;
+  font-style: normal;
+}
+
+.App {
+  text-align: center;
+  font-family: 'Museo Sans Rounded';
+}
+
