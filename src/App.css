@@ -10,3 +10,41 @@
   font-family: 'Museo Sans Rounded';
 }
 
+/*.navbar{
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}*/
+
+.principal {
+  border: 2px solid #136C55;
+  background-color: #fff;
+}
+
+.header {
+  background-color: #136C55;
+  font-weight: bold;
+  color: #fff;
+}
+
+.header a:link {
+  color: #fff;
+}
+
+.header a:visited {
+  color: #fff;
+}
+
+.header a:hover {
+  color: #6C132B;
+}
+
+.header__logo {
+  height: 110px;
+  width: 110px;
+}
+
+.boton {
+  border: 2px solid #136C55;
+  background-color: #fff;
+}
