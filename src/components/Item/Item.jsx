@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 const Item = ({id, nombre, category,stock,autor, precio}) => {
     return (      
         
-            <div className='col-12 mb-3'> 
+            <div className='item-principal'> 
                 <header >{nombre}</header>
                 <section>
                 <p>{category}</p> 
@@ -14,7 +14,7 @@ const Item = ({id, nombre, category,stock,autor, precio}) => {
                 <p>Precio: ${precio}</p> 
                 </section>
                 <footer>
-                    <NavLink to={`/item/${id}`}>Ver detalle</NavLink>
+                    <NavLink to={`/item/${id}`} className="navlink">Ver detalle</NavLink>
                 </footer>
             </div>    
 

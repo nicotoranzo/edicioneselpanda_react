@@ -1,8 +1,13 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import '../../App.css';
 import  Itemcount  from '../Itemcount/Itemcount';
 
-const Itemdetail = ({ id, nombre, category,stock,autor, precio}) => {
+
+
+const Itemdetail = ({ nombre, category,stock,autor, precio}) => {
+
+  const navigate = useNavigate()
+
   return (
     <div className='principal'>
         <header >{nombre}</header>
@@ -14,9 +19,8 @@ const Itemdetail = ({ id, nombre, category,stock,autor, precio}) => {
         </section>
         <footer>
           <Itemcount inicial={1} stock={stock} onAdd={(quantity) => console.log("cantidad agregada", quantity)} />
-          <NavLink to={"/category"}>Volver</NavLink>          
-        </footer>
-        
+          <NavLink onClick={()=>navigate(-1)}>Volver</NavLink>          
+        </footer>     
 
     </div>
     

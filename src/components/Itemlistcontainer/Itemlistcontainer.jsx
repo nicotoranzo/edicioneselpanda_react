@@ -26,8 +26,8 @@ const Itemlistcontainer = () => {
 	},[categoryId])
 
 	return(
-		<div className="container principal pt-2 mb-3">
-			<Itemlist  products={products}/>	
+		<div className="container pt-2 mb-3 principal">
+			<Itemlist  products={products}/>
 		</div>
 		
 	)

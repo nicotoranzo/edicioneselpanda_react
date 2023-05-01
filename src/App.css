@@ -16,9 +16,21 @@
   gap: 10px;
 }*/
 
-.principal {
+.principal , .item-principal {
   border: 2px solid #136C55;
   background-color: #fff;
+  margin: 1%;
+  padding: 1%;
+}
+
+.item-principal {
+  margin: 1%;
+  background-color: #136c5480;
+  font-weight: bold;
+}
+
+.item-principal a:hover{
+  color: #6C132B;
 }
 
 .header {
@@ -48,3 +60,16 @@
   border: 2px solid #136C55;
   background-color: #fff;
 }
+
+.cardgrid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr); 
+  margin: 0 10%;
+  padding: 0 10%;
+  column-gap: 5%;
+  
+}
+
+
+
+

@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../App.css';
-import {CartWidget} from '../cartwidget/Cartwidget';
+import {CartWidget} from '../Cartwidget/Cartwidget';
 import Avatar from '../../assets/avatar.png'
 import { NavLink } from 'react-router-dom';
 
@@ -11,7 +11,10 @@ const NavBar = () => {
 			<div className="navbar navbar-expand-lg">
 				<div className="container-fluid">
 					<NavLink to="/" className='navbar-brand'><img src={Avatar} alt="logo" className='header__logo' /></NavLink>
-					<div className="navbar principal header">
+					<button className="navbar-toggler navbar-dark header" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	              		<span className="navbar-toggler-icon"></span>
+	            	</button>
+					<div className="collapse navbar-collapse header m-2" id="navbarSupportedContent">
 						<ul className="navbar-nav p-1 me-auto mb-1 mb-lg-0 ">
 							<li className="nav-item">	
 								<NavLink to={"/category/Novelas"} className="nav-link">Novelas</NavLink>
@@ -21,7 +24,7 @@ const NavBar = () => {
 							</li>
 						</ul>
 					</div>		
-					<CartWidget className="principal header" />									
+					<CartWidget  />									
 				</div>	
 			</div>
 		</nav>	
