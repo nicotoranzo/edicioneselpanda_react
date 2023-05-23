@@ -4,7 +4,6 @@ import CartWidget from '../Cartwidget/Cartwidget';
 import Avatar from '../../assets/avatar.png'
 import { NavLink } from 'react-router-dom';
 
-
 const NavBar = () => {
 	return(
 		<nav className='container principal sticky-top mb-2'>
