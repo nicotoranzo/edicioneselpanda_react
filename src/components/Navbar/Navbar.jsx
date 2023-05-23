@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../App.css';
-import {CartWidget} from '../Cartwidget/Cartwidget';
+import CartWidget from '../Cartwidget/Cartwidget';
 import Avatar from '../../assets/avatar.png'
 import { NavLink } from 'react-router-dom';
 

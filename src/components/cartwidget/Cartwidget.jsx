@@ -3,7 +3,7 @@ import Cart from './assets/cart.svg';
 import { CartContext } from '../../context/CartContext';
 import { NavLink } from 'react-router-dom';
 
-export const CartWidget = () => {
+const CartWidget = () => {
 	const {totalQuantity} = useContext(CartContext)
 	
 	return(
@@ -13,3 +13,5 @@ export const CartWidget = () => {
 		</NavLink>
 	)
 }
+
+export default CartWidget
