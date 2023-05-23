@@ -15,6 +15,7 @@ const NavBar = () => {
 	              		<span className="navbar-toggler-icon"></span>
 	            	</button>
 					<div className="collapse navbar-collapse header m-2" id="navbarSupportedContent">
+						<NavLink to="/" className='nav-link p-2'>Ediciones El Panda</NavLink>
 						<ul className="navbar-nav p-1 me-auto mb-1 mb-lg-0 ">
 							<li className="nav-item">	
 								<NavLink to={"/category/Novelas"} className="nav-link">Novelas</NavLink>

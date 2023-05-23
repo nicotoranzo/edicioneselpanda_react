@@ -59,6 +59,7 @@
 .boton {
   border: 2px solid #136C55;
   background-color: #fff;
+  
 }
 
 .cardgrid {
@@ -70,6 +71,31 @@
   
 }
 
+.footer-logo {
+  height: 24px;
+  width: 24px;
+}
 
+@media all and (max-width: 768px) {
+  .footer-logo {
+    height: 36px;
+    width: 36px;
+  }
+}
+
+.cartitem {
+  display: flex;
+  justify-content: space-between;
+}
+
+.img-item {
+  width: 100px;
+  height: 157px;
+}
+
+.img-cartitem {
+  width: 25px;
+  height: 39.2px;
+}
 
 
